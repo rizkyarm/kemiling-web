@@ -114,7 +114,8 @@
                     <label for="place_search" class="block text-sm font-medium text-gray-700">Cari Lokasi (Google Maps)</label>
                     <input id="place_search" type="text"
                         placeholder="Cari nama tempat, alamat..."
-                        class="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-green-500 focus:outline-none focus:ring-green-500 sm:text-sm">
+                        class="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-green-500 focus:outline-none focus:ring-green-500 sm:text-sm"
+                        onkeydown="if(event.key === 'Enter'){ event.preventDefault(); }">
 
                     <p class="mt-2 text-xs text-gray-500">
                         Tips: ketik nama lokasi lalu pilih dari saran. Kamu juga bisa klik peta, atau geser markernya.
